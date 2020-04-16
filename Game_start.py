@@ -1,5 +1,5 @@
 import cnfg
-import maintanance as mnt
+import game_loop
 import pygame
 import sys
 
@@ -30,7 +30,7 @@ def start_screen_interface():
 				pygame.quit()
 				sys.exit()
 			if key[pygame.K_s]:
-				mnt.game_loop(world)
+				game_loop.main_game_loop(world)
 		pygame.display.update()
 
 
