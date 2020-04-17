@@ -3,7 +3,7 @@ import os
 SCREENSIZE = [640, 640]
 
 # color data to pass to game world
-BACKGROUND_BLACK = (0, 0, 0)
+BACKGROUND_BLACK = (225, 225, 225)
 
 BACKGROUND_START_SCREEN = (60, 60, 60)
 
