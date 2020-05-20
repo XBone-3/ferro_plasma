@@ -1,3 +1,5 @@
+# script is self explanatory
+# CrossBon3 
 import neat
 import pygame
 import os
