@@ -1,3 +1,4 @@
+# strictly a command line game
 import random
 import subprocess
 import os
