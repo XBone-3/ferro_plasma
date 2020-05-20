@@ -5,7 +5,7 @@ import argparse
 import time
 import emoji
 
-
+# creating all the destination folders
 def destination_create(index):
 	if not os.path.exists(destinations[keys[index]]):
 		try:
@@ -20,7 +20,7 @@ def destination_create(index):
 		print(f'destination {destinations[keys[index]]} already exists. Trying to use existing directory...')
 		log.write(f'using already existing directory {destinations[keys[index]]} at {time.asctime()} \n')
 
-
+# a function to move all the files to the respective destination folder
 def move_to_function(path, formats):
 	if not os.path.isdir(path):
 		path_split_index = path.split('.')
