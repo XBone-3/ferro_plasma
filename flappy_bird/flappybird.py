@@ -2,7 +2,6 @@ import pygame
 import os
 import random
 
-GEN = 0
 WIDTH = 600
 HEIGHT = 900
 BIRD_IMGS = [pygame.transform.scale2x(pygame.image.load('imgs\\bird1.png')),
