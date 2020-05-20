@@ -4,7 +4,7 @@ import sys
 import argparse
 import time
 
-
+# creating destinations
 def destination_create(index):
 	if not os.path.exists(destinations[keys[index]]):
 		try:
@@ -19,7 +19,7 @@ def destination_create(index):
 		print(f'destination {destinations[keys[index]]} already exists. Trying to use existing directory...')
 		log.write(f'using already existing directory {destinations[keys[index]]} at {time.asctime()} \n')
 
-
+# function to move or copy the files to destinations
 def function(path, formats, choice):
 	if not os.path.isdir(path):
 		path_split_index = path.split('.')
@@ -78,7 +78,7 @@ def function(path, formats, choice):
 				log.write(f'performing operation on{item} with {format_names[i]} at {time.asctime()} \n')
 				function(item, formats, user_decision)
 
-
+# the main
 if __name__ == '__main__':
 	print(
 		'"organise" is used when your folder is like trash and you want to organise them according to the file type....')
