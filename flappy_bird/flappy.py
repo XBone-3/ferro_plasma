@@ -264,5 +264,5 @@ def run_fitness(config_path):
 	population.add_reporter(statastics)
 	winner = population.run(game_loop, 50)
 if __name__ == '__main__':
-    config_path = 'config-neat-feedforward.txt'
+    config_path = 'neat-config-feedforward.txt'
     run_fitness(config_path)
