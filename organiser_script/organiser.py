@@ -26,7 +26,7 @@ def function(path, formats, choice):
 		file_extension_index = len(path_split_index) - 1
 		file_extension_name = path_split_index[file_extension_index]
 		for extension in formats:
-			if extension == file_extension_name:
+			if extension == file_extension_name.lower():
 				try:
 					drctry_split_list = path.split('\\')
 					file_name_index = len(drctry_split_list) - 1
